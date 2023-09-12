@@ -77,8 +77,14 @@ body {
     border: none;
     background: var(--primary-color);
     color: var(--secondary-color);
+    transition: all .5s;
     cursor: pointer;
     font-size: 18px;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Page Main */
@@ -119,7 +125,6 @@ body {
 }
 
 .tasks-main {
-    border: 1px solid red;
     width: 100%;
     height: 40%;
     margin-top: 15px;
@@ -131,18 +136,35 @@ body {
 
 .tasks-title {
     color: var(--secondary-color);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .tasks-icon-r {
     display: flex;
     flex-direction: row;
+    background: var(--secondary-color);
+    padding: 8px 15px;
+    border-radius: 15px;
 }
 
 .tasks-icon-r svg {
-    margin-top: 11px;
+    box-sizing: unset;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.tasks-icon-r svg:hover {
+    background-color: var(--primary-color);
+    fill: #FFFFFF;
 }
 
 .tasks-icon-r h3 {
-    margin-left: 15px;
-    color: var(--secondary-color);
+    margin-left: 25px;
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    
 }
